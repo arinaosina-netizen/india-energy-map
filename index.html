@@ -90,36 +90,48 @@
 
     const projects = [
       {
-        name: 'Rewa Ultra Mega Solar',
-        coords: [24.53, 81.30],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Solar_panels.jpg/640px-Solar_panels.jpg',
-        type: 'Solar PV',
-        capacity: '750 MW',
-        info: 'A flagship solar PPP project in Madhya Pradesh, often presented as a model for scaling solar in India.'
+        name: 'Gujarat Hybrid Renewable Energy Park',
+        coords: [23.85, 68.75],
+        image: 'images/gujarat-hybrid.jpg',
+        type: 'Solar + Wind Hybrid',
+        capacity: '30 GW planned',
+        consumerImpact: 'Tendency: aims to increase large-scale low-cost renewable supply over time.',
+        startDate: '2020s development phase',
+        workingTime: 'Under development; not yet operating as a full completed park.',
+        info: 'A mega renewable hub in Kutch, Gujarat, representing India’s large-scale hybrid energy strategy.'
       },
       {
         name: 'Bhadla Solar Park',
         coords: [27.54, 72.24],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Solar_Panels.jpg/640px-Solar_Panels.jpg',
+        image: 'images/bhadla.jpg',
         type: 'Solar PV',
         capacity: '2,245 MW',
-        info: 'One of India\'s best-known mega-solar parks, located in Rajasthan and important for large-scale desert solar development.'
+        consumerImpact: 'Price tendency: helped push solar tariffs downward through large-scale generation.',
+        startDate: '2015',
+        workingTime: 'Operational since phased commissioning from 2015 onward.',
+        info: 'One of India\'s largest solar parks in Rajasthan and a key example of utility-scale solar expansion.'
       },
       {
-        name: 'Khavda Renewable Energy Park',
-        coords: [23.85, 68.75],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Windmills_D1-D4_%28Thornton_Bank%29.jpg/640px-Windmills_D1-D4_%28Thornton_Bank%29.jpg',
-        type: 'Solar + Wind Hybrid',
-        capacity: '30 GW planned',
-        info: 'A giant hybrid renewable project in Gujarat that represents India\'s current large-scale clean-energy ambition.'
+        name: 'Lower Subansiri Project',
+        coords: [27.55, 94.02],
+        image: 'images/lower-subansiri.jpg',
+        type: 'Hydropower',
+        capacity: '2,000 MW',
+        consumerImpact: 'Tendency: intended to support long-term power supply, though hydropower costs and delays remain debated.',
+        startDate: '2005 construction start',
+        workingTime: 'Still under construction / not in regular long-term operation yet.',
+        info: 'A major hydroelectric project on the Subansiri River with strong political, environmental, and regional significance.'
       },
       {
-        name: 'Gujarat Offshore Wind Project',
-        coords: [21.60, 72.20],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Offshore_windpark_Thorntonbank.jpg/640px-Offshore_windpark_Thorntonbank.jpg',
-        type: 'Offshore wind',
-        capacity: '500 MW tendered',
-        info: 'A first-step offshore wind project off Gujarat, useful for discussing India\'s future diversification into new clean-energy technologies.'
+        name: 'Muppandal Wind Farm',
+        coords: [8.25, 77.55],
+        image: 'images/muppandal.jpg',
+        type: 'Onshore Wind',
+        capacity: 'About 1,500 MW',
+        consumerImpact: 'Price tendency: supported cheaper renewable generation in Tamil Nadu over time.',
+        startDate: '1990s',
+        workingTime: 'Operating for decades, with continued use and expansion over time.',
+        info: 'One of India\'s best-known onshore wind clusters, important for early wind development in Tamil Nadu.'
       }
     ];
 
@@ -130,6 +142,9 @@
           <h3>${project.name}</h3>
           <p><strong>Type:</strong> ${project.type}</p>
           <p><strong>Capacity:</strong> ${project.capacity}</p>
+          <p><strong>Consumer impact:</strong> ${project.consumerImpact}</p>
+          <p><strong>Start date:</strong> ${project.startDate}</p>
+          <p><strong>How long it works:</strong> ${project.workingTime}</p>
           <p>${project.info}</p>
         </div>
       `;
