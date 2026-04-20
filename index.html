@@ -94,14 +94,16 @@
 
     const projects = [
       {
-        name: 'Gujarat Hybrid Renewable Energy Park',
+        name: 'Gujarat Hybrid Renewable Energy Park (Khavda)',
         coords: [23.85, 68.75],
         image: 'gujarat-hybrid.jpg',
         type: 'Solar + Wind Hybrid',
         capacity: '30 GW planned',
-        consumerImpact: 'Tendency: aims to increase large-scale low-cost renewable supply over time.',
+        consumerImpact: 'Tariffs around ₹2.5–₹3/kWh; some hybrid projects in the region reach about ₹3.7/kWh.',
         startDate: '2020s development phase',
-        workingTime: 'Under development; not yet operating as a full completed park.',
+        workingTime: 'Under development; not yet operating as a fully completed park.',
+        investment: 'Estimated capital investment: about $20 billion (≈ ₹1.6 lakh crore).',
+        aim: 'Aim: massive electricity generation, energy transition, lower emissions, and better long-term price stability.',
         info: 'A mega renewable hub in Kutch, Gujarat, representing India’s large-scale hybrid energy strategy.'
       },
       {
@@ -110,9 +112,11 @@
         image: 'bhadla.jpg',
         type: 'Solar PV',
         capacity: '2,245 MW',
-        consumerImpact: 'Price tendency: helped push solar tariffs downward through large-scale generation.',
+        consumerImpact: 'Very low solar tariffs: about ₹3.43/kWh early on, later below ₹3/kWh, with ₹2.44/unit often cited.',
         startDate: '2015',
         workingTime: 'Operational since phased commissioning from 2015 onward.',
+        investment: 'Approx. capital investment: $2.17 billion.',
+        aim: 'Aim: reduce electricity costs through large-scale solar and competitive bidding.',
         info: 'One of India\'s largest solar parks in Rajasthan and a key example of utility-scale solar expansion.'
       },
       {
@@ -146,10 +150,11 @@
           <h3>${project.name}</h3>
           <p><strong>Type:</strong> ${project.type}</p>
           <p><strong>Capacity:</strong> ${project.capacity}</p>
-          <p><strong>Consumer impact:</strong> ${project.consumerImpact}</p>
-          <p><strong>Start date:</strong> ${project.startDate}</p>
-          <p><strong>How long it works:</strong> ${project.workingTime}</p>
-          <p>${project.info}</p>
+          <p><strong>Price:</strong> ${project.consumerImpact}</p>
+          <p><strong>Investment:</strong> ${project.investment || '—'}</p>
+          <p><strong>Start:</strong> ${project.startDate}</p>
+          <p><strong>Status:</strong> ${project.workingTime}</p>
+          <p><strong>Aim:</strong> ${project.aim || project.info}</p>
         </div>
       `;
 
