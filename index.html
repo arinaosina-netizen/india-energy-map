@@ -22,17 +22,37 @@
       padding: 16px 20px;
       background: #0f172a;
       color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
     }
 
-    header h1 {
+    .header-left h1 {
       margin: 0;
       font-size: 24px;
     }
 
-    header p {
+    .header-left p {
       margin: 6px 0 0;
       font-size: 14px;
       opacity: 0.9;
+    }
+
+    .video-link {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 8px 14px;
+      border-radius: 8px;
+      transition: 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .video-link:hover {
+      background: rgba(255, 255, 255, 0.12);
     }
 
     #map {
@@ -73,8 +93,19 @@
 </head>
 <body>
   <header>
-    <h1>India Energy Transition Projects</h1>
-    <p>Click on a marker to see a photo and key information about the project.</p>
+    <div class="header-left">
+      <h1>India Energy Transition Projects</h1>
+      <p>Click on a marker to see a photo and key information about the project.</p>
+    </div>
+
+    <a
+      class="video-link"
+      href="https://drive.google.com/file/d/1DEsRSYI0QgnykuJFKxiTM6aOYkGbQfO3/view"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Video
+    </a>
   </header>
 
   <div id="map"></div>
