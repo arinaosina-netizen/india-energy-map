@@ -39,7 +39,13 @@
       opacity: 0.9;
     }
 
-    .video-link {
+    .header-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .header-link {
       color: white;
       text-decoration: none;
       font-size: 14px;
@@ -51,7 +57,7 @@
       white-space: nowrap;
     }
 
-    .video-link:hover {
+    .header-link:hover {
       background: rgba(255, 255, 255, 0.12);
     }
 
@@ -98,14 +104,25 @@
       <p>Click on a marker to see a photo and key information about the project.</p>
     </div>
 
-    <a
-      class="video-link"
-      href="https://drive.google.com/file/d/1DEsRSYI0QgnykuJFKxiTM6aOYkGbQfO3/view"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Video
-    </a>
+    <div class="header-actions">
+      <a
+        class="header-link"
+        href="https://drive.google.com/file/d/126-b4G5J23xQqVEp3VQZDl05tkIKWtrr/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Table
+      </a>
+
+      <a
+        class="header-link"
+        href="https://drive.google.com/file/d/1DEsRSYI0QgnykuJFKxiTM6aOYkGbQfO3/view?usp=share_link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Video
+      </a>
+    </div>
   </header>
 
   <div id="map"></div>
